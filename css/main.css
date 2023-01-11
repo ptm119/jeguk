@@ -1,24 +1,78 @@
-/*
-
 body {
     height: 200vh;
 }
 
-*/
-
 #main-screen {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 100%;
     height: 100%;
 }
 
 .welcome-title {
-    margin-top: 144px;
-    font-size: 40px;
+    margin-top: 300px;
+    font-size: 72px;
     font-weight: 600;
     color: white;
+}
+
+.channels {
+    display: flex;
+    justify-content: center;
+}
+
+.gemejoa-channel,
+.jeguk-channel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 650px;
+    color: white;
+}
+
+.gemejoa-channel {
+    left: 15%;
+}
+
+.jeguk-channel {
+    right: 15%;
+}
+
+.gemejoa-channel span,
+.jeguk-channel span {
+    font-size: 20px;
+}
+
+.gemejoa-channel h4,
+.jeguk-channel h4 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.gemejoa-image,
+.jeguk-image {
+    width: 150px;
+    height: 150px;
+}
+
+.gemejoa-image {
+    transform: rotateZ(20deg);
+}
+
+.jeguk-image {
+    width: 150px;
+    height: 150px;
+    transform: rotateZ(-20deg);
+}
+
+.channels__title {
+    position: absolute;
+    top: 740px;
+    color: white;
+    font-size: 60px;
 }
 
 .nav-bar {
@@ -42,6 +96,18 @@ body {
     font-weight: 600;
 }
 
-.bg-image {
-    position: fixed;
+.icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-block span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
