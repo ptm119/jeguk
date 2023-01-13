@@ -1,0 +1,65 @@
+body {
+    width: 100vw;
+    height: 200vh;
+}
+
+#main-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.info-window {
+    width: 90%;
+    height: 82%;
+    position: absolute;
+    top: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+}
+
+.title-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.info-window__title {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    font-size: 20px;
+}
+
+.info-window__exit-icon {
+    position: absolute;
+    top: 3px;
+    right: 25px;
+    color: black;
+}
+
+.info-window__exit-icon:active {
+    color: tomato;
+}
+
+.info-window__div-bar {
+    width: 99.5%;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: gray;
+    margin-top: 37px;
+}
+
+.info-window__exit-icon__div-bar {
+    position: absolute;
+    width: 5px;
+    height: 35px;
+    top: 1px;
+    right: 65px;
+    border-radius: 2.5px;
+    background-color: gray;
+}
