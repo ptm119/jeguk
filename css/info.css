@@ -63,3 +63,34 @@ body {
     border-radius: 2.5px;
     background-color: gray;
 }
+
+.info-window__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-window__main h1,
+.info-window__main h2 {
+    margin-top: 80px;
+}
+
+.info-window__main h1 {
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.info-window__main h2 {
+    font-size: 72px;
+}
+
+.info-window__main p {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.info-window__main a {
+    font-weight: 600;
+    color: black;
+}
