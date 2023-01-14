@@ -1,3 +1,15 @@
+@keyframes show-nav-bar {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .nav-bar {
     z-index: 1;
     display: flex;
@@ -10,6 +22,7 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px;
+    animation: show-nav-bar 1s ease-in-out forwards;
 }
 
 .nav-bar__title {
